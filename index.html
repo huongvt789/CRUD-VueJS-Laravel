@@ -4,6 +4,56 @@
 	<title>vue.js</title>
 </head>
 <body>
-<h1>Learning vue.js</h1>
+	<!-- <div id="app">
+		<p>	{{ message }} </p>
+		<button v-on:click = "reverseMessage">Reverse Message</button>
+		<input v-model = "message">
+	</div>
+	<div id="app2">
+		<ol>
+			<todo-item 
+			v-for = "item in groceryList"
+			v-bind:todo = "item"
+			v-bind:key = "item.id">
+			</todo-item>
+		</ol>
+	</div> -->
+	<div id="app3">
+		<span v-if="seen">Now you see me</span>
+	</div>
+	<script type="text/javascript">
+		var app3 = new Vue({
+			el: '#app',
+			data: {
+				seen: false
+			}
+		})
+			// var app = new Vue({
+			// 	el: '#app',
+			// 	data: {
+			// 		message: 'Hello Vue!'
+			// 	},
+			// 	methods: {
+			// 		reverseMessage: function () {
+			// 			this.message = this.message.split ('').reverse().join('')
+			// 		}
+			// 	},
+
+			// }),
+			// Vue.component('todo-item', {
+			// 	props: ['todo'],
+			// 	template: '<li>{{todo.text}}</li>'
+			// })
+
+			// var app2 = new Vue ({
+			// 	el: '#app2',
+			// 	data: {
+			// 		groceryList: [
+			// 		{ id: 0, text: 'Apple'},
+			// 		{ id: 1, text: 'Vegettable'}]
+			// 	}
+			// })
+	</script>
+	<script src="Vue.js"></script>
 </body>
 </html>
